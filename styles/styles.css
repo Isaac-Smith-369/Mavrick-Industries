@@ -167,7 +167,7 @@ footer {
 }
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1085px) {
     header {
         flex-wrap: wrap;
     }
@@ -193,7 +193,8 @@ footer {
         flex-direction: column;
     }
     .heading-image {
-        width: auto;
+        width: 500px;
+        align-self: center;
     }
     .footer-col:nth-child(1) {
         margin-right: 20px;
