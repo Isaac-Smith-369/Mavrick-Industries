@@ -3,7 +3,6 @@
 }
 
 html {
-    /* background: url('grid.png'); */
     background: #aecaee;
     background-attachment: fixed;
 }
@@ -82,8 +81,8 @@ nav ul li a {
 
 .heading-wrap {
     display: flex;
-    /* margin-right: 20px; */
     width: 100%;
+    /* background: #6ad5cd; */
 }
 
 .heading-text {
@@ -92,13 +91,12 @@ nav ul li a {
 
 .heading-image {
     width: 500px;
-    flex-grow: 1;
+    object-fit: cover;
 }
 
 .heading {
     font-size: 80px;
 }
-
 
 .readmore {
     background: #1e3294;
@@ -125,6 +123,25 @@ nav ul li a {
 .banner img  {
     width: 47px;
     height: 55px;
+}
+
+.profiles {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profiles:nth-child(even) {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.profile-image {
+    height: 140px;
+    min-width: 140px;
+    object-fit: cover;
+    margin: 20px;
 }
 
 footer ul {
