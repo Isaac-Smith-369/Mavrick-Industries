@@ -2,126 +2,167 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Uncial+Antiqua&display=swap"
-      rel="stylesheet"
-    />
-    <title>Maverick Indestries</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Mavrick Industries</title>
   </head>
   <body>
     <header>
-      <nav class="nav collapsible">
-        <a class="nav__brand" href="/"
-          ><img src="images/maverick logo 1.png" alt="Logo"
-        /></a>
-        <svg class="icon icon--white nav__toggler">
-          <use xlink:href="images/sprite.svg#menu"></use>
-        </svg>
-        <ul class="list nav__list collapsible__content">
-          <li class="nav__item"><a href="#">Home</a></li>
-          <li class="nav__item"><a href="#about">About</a></li>
-          <li class="nav__item"><a href="#contact">Contact</a></li>
-          <li class="nav__item"><a href="#products">Products</a></li>
-          <li class="nav__item"><a href="#products">Partnership</a></li>
+      <!-- Navigation Bar -->
+      <nav>
+        <a href="#" class="logo-wrap" tabindex="0">
+          <img src="img/logo.gif" alt="Maverick Inductries logo" height="50" />
+        </a>
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+          <li>
+            <a href="#">Products</a>
+          </li>
+          <li>
+            <a href="#">Partnership</a>
+          </li>
         </ul>
       </nav>
     </header>
-    <main>
-      <section class="block hero-section">
-        <div class="container grid grid--1x2">
-          <figure>
-            <img class="hero__image" src="images/ppp.png" alt="products" />
-          </figure>
-          <section class="block__header hero__content">
-            <h1 class="block__heading">Your</h1>
-            <h1 class="block__heading">Single</h1>
-            <h1 class="block__heading">Source</h1>
-            <h2 class="hero__tagline">
-              For Hose, Fittings, Tubing, Quick Disconnects, V-belts,
-              Maintenance Chemicals, Paint,Safety and Personal Protective
-              Products
-            </h2>
-            <button class="btn btn--primary btn--stretched">Get Started</button>
-          </section>
+    <main class="container">
+      <!-- Hero Section -->
+      <section class="hero">
+        <figure>
+          <img
+            class="hero-image"
+            src="img/my-project.png"
+            alt="Pressure release valves and tools from Maverick Industries."
+            aria-label="Pressure release valves"
+          />
+        </figure>
+        <div class="hero-text">
+          <h1 class="hero-heading">Your<br />Single<br />Source</h1>
+          <h3 class="hero-subheading">
+            For Hose, Fittings, Tubing, Quick Disconnects, V-belts, Maintenance
+            Chemicals, Paint, Safety and Personal Protective Products.
+          </h3>
+          <button
+            id="get-started"
+            class="get-started"
+            role="button"
+            type="button"
+          >
+            Get Started
+          </button>
         </div>
       </section>
-      <section id="about" class="block container">
-        <article class="block__header">
-          <h2>About</h2>
-          <p class="about__p">
-            Maverick Industries, Inc. is a leading supplier of Industrial,
-            Commercial, Construction and Military products throughout North
-            America. Our comprehensive range of quality products and large
-            inventories has enabled our company to develop long lasting business
-            relationships with our customers. This "Customer/Vendor"
-            relationship is crucial in today's business climate. Our customers
-            depend on us to supply superior products, on time, at a competitive
-            price. Customer service is our primary goal.
-          </p>
-          <h3>We provide solutions to your problems!</h3>
-        </article>
+      <section class="about">
+        <h2>About Us</h2>
+        <h3>we provide solutions to your problems!</h3>
+        <p>
+          Maverick Industries, Inc. is a leading supplier of Industrial,
+          Commercial, Construction and Military products throughout North
+          America. Our comprehensive range of quality products and large
+          inventories has enabled our company to develop long lasting business
+          relationships with our customers. This "Customer/Vendor" relationship
+        </p>
+        <p>
+          is crucial in today's business climate. Our customers depend on us to
+          supply superior products, on time, at a competitive price. Customer
+          service is our primary goal.
+        </p>
+        <button id="readmore" class="readmore" role="button" type="button">
+          Read More
+        </button>
       </section>
-      <section id="products" class="block container">
-        <article class="grid grid--1x2 feature">
-          <div class="feature__content">
+      <section>
+        <div class="profiles">
+          <img
+            class="profile-image"
+            src="img/image4.png"
+            height="350"
+            width="350"
+            alt="A pressure release valve from Maverick Industries."
+            title="Pressure Release valve"
+            aria-label="A pressure release valve"
+          />
+          <div class="profile-description">
             <p>
-              Product Line <br />
-              CardProduct Line <br />
-              CardRental Contractor <br />
-              Supply ListingRental
+              Product Line<br />Card Product Line<br />Card Rental Contractor<br />Supply
+              Listing Rental
             </p>
           </div>
+        </div>
+        <div class="profiles">
           <img
-            data-aos="zoom-in-left"
-            class="feature__image"
-            src="images/quick-connect-rv-example 1.png"
-            alt="A connecting host"
+            class="profile-image"
+            src="img/image5.png"
+            height="350"
+            width="350"
+            alt="A pressure release valve from Maverick Industries."
+            title="Pressure Release valve"
+            aria-label="A pressure release valve"
           />
-        </article>
-        <article class="grid grid--1x2 feature">
-          <div class="feature__content">
-            <p style="padding-left: 150px">
-              Contractor Supply <br />
-              ListingParker Hose <br />
-              SelectorParker Hose <br />
-              SelectorParker Crimp <br />
-              SourceParker Crimp <br />
-              SourcePressure Relief <br />
-              ValvesPressure Relief Valves
+          <div class="profile-description">
+            <p>
+              Contractor Supply<br />
+              Listing Parker Hose<br />
+              Selector Parker Hose<br />
+              Selector Parker Crimp<br />
+              Source Parker Crimp<br />
+              Source Pressure Relief Valves<br />Pressure Relief Valves<br />
             </p>
           </div>
-          <img
-            data-aos="zoom-in-left"
-            class="feature__image"
-            src="images/1785242 1.png"
-            alt="Pressure release valve"
-          />
-        </article>
+        </div>
       </section>
-      <section class="credibility">
-        <figure>
-          <img class="cred__image" src="images/cosa 2.png" alt="Partner" />
-        </figure>
+
+      <section class="banner">
+        <img
+          class="certification-image"
+          src="img/cosa.gif"
+          alt="Circle of Safety Certified Distributor"
+        />
         <div>
           <p>Maverick Industries, Inc.</p>
-          <p>A Parker "CIRCLE OF SAFETY DISTRIBUTOR"</p>
+          <p>A Parker <b>"CIRCLE OF SAFETY DISTRIBUTOR"</b></p>
         </div>
-
-        <figure>
-          <img class="cred__image" src="images/cosa 2.png" alt="Partner" />
-        </figure>
       </section>
     </main>
-    <footer id="contact" class="block block--dark footer">
-      <p class="foooter__p">5945 West Snowville Road, Brecksville OH 44141</p>
-      <p class="foooter__p">Phone: 440-838-5335, Fax: 440-838-4082.</p>
-      <p class="footer__copyright">Copyright ©2023 Maverick Industries, Inc.</p>
+    <footer>
+      <!-- <div class="footer-wrap">
+        <div class="footer-col">
+          <h3>Contact Us</h3>
+          <hr />
+          <ul>
+            <li>5945 West Snowville Road, Berksville OH 44141</li>
+            <li>Phone: 440-838-5335</li>
+            <li>Fax: 440-838-4082</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <hr />
+          <ul>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Partnerships</a></li>
+            <li><a href="#">Product Lines</a></li>
+            <li><a href="#">Parker Industrial House</a></li>
+            <li><a href="#">Maverick Pressure Relief Valves</a></li>
+            <li><a href="#">Tomoco U2-16</a></li>
+          </ul>
+        </div>
+      </div> -->
+      <section class="footer-info">
+        <p>5945 West Snowville Road, Berksville OH 44141</p>
+        <p>Phone: 440-838-5335</p>
+        <p>Fax: 440-838-4082</p>
+      </section>
+      <p>© 2023 Mavrick Industries. All rights reserved</p>
     </footer>
-    <script src="js/main.js"></script>
+    <script src="/js/main.js" defer></script>
   </body>
 </html>

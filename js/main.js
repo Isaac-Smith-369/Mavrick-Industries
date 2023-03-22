@@ -1,10 +1,16 @@
-const collapsibles = document.querySelectorAll(".collapsible");
-collapsibles.forEach((item) =>
-  item.addEventListener("click", function () {
-    this.classList.toggle("collapsible--expanded");
-  })
-);
+const getStarted = document.getElementById("get-started");
+const readMore = document.getElementById("readmore");
 
-document.querySelector(".btn").addEventListener("click", function () {
-  alert("Service is not available at the moment.");
-});
+getStarted.addEventListener('click', () => {
+    alert("Sorry. You cannot make purchases at the moment.")
+})
+
+readMore.addEventListener('click', () => {
+    alert("Sorry. The about page is not avalable at the moment.")
+})
+
+
+
+window.addEventListener("beforeunload", (e) => {
+    e.returnValue = true
+})
